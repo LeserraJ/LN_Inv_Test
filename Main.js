@@ -1,21 +1,18 @@
-class WorkOut {
-        constructor(rep, set, weight, excercise) {
-                this.rep = rep;
-                this.set = set;
-                this.weight = weight;
+function WorkOut (excercise, set, rep, weight, ) {
                 this.excercise = excercise;
-        }
-
-        NewWorkout(){
-                console.log('The Workout today is ${this.excercise}')
+                this.set = set;
+                this.rep = rep;
+                this.weight = weight;
+                
+                
         };
-        
-}
 
 
-const test1 = new WorkOut ("")
+const test1 = new WorkOut ('Bench Press','2','10','225',);
 
-export{WorkOut};
+const test2 = new WorkOut ('What Excercise ${this.excercise}')
+
+const InputExcercise = document.getElementById("excercise.input")
 
 
-console.log("Live Reload");
+console.log(test2);
